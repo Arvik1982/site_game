@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+.center {
+    padding-left: calc(50% - 720px);
+    padding-right: calc(50% - 720px);
+}
+
+.body {
+    font-family: 'Montserrat';
+    font-style: normal;
+    background: #000915;
+    max-width: 1440px;
+    height: 1024px;
+}
+
+.top {
+    max-width: 1440px;
+    max-height: 1024px;
+    margin-bottom: 450px;
+    background-image: url(img/bckgrtp.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.top_text_block {
+    border-color: #000915;
+}
+
+.h1_block {
+    margin-left: 120px;
+    margin-top: 217px;
+    font-style: normal;
+    display: flex;
+    align-items: center;
+    color: #FFFFFF;
+    width: 788px;
+}
+
+.p_text_block {
+    width: 481px;
+    height: 64px;
+    margin-left: 120px;
+    margin-top: 17px;
+    width: 481px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 32px;
+    /* or 178% */
+    /* display: flex;
+    align-items: center; */
+    color: #FFFFFF;
+}
+
+.top_button {
+    margin-left: 120px;
+    margin-top: 44px;
+    width: 234px;
+    height: 48px;
+    left: 120px;
+    top: 482px;
+    background: #9C0332;
+    border-radius: 30px;
+}
+
+.bottom {
+    padding-top: 128px;
+    padding-bottom: 128px;
+    background-image: url(img/bckgrbm.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    max-width: 1440px;
+    max-height: 556px;
+
+}
+
+.bottom_gamebox {
+    margin-left: 120px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 32px;
+}
+
+.gblock_img {
+    border-radius: 16px;
+    width: 379px;
+    height: 300px;
+}
+
+.gblock_gamename {
+    position: relative;
+    top: -50px;
+    margin-left: 32px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 32px;
+    /* identical to box height, or 133% */
+    display: flex;
+    align-items: center;
+    color: #FFFFFF;
+}
+
+
+@import'mobile';
