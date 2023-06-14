@@ -1,10 +1,9 @@
 @media (max-width: 767px) {
 
     * {
-        margin: 0;
-        padding: 0;
+        margin: 0px;
+        padding: 0px;
     }
-
     .center {
         padding-left: 16px;
         padding-right: 16px;
@@ -12,8 +11,8 @@
 
     .top {
         max-width: 1440px;
-        max-height: 1024px;
-        margin-bottom: 190px;
+        max-height: 735px;
+        
     }
 
     .top_button {
@@ -31,7 +30,8 @@
     }
 
     .h1_block {
-        margin-left: 52px;
+        margin-left: 16px;
+        margin-right: 16px;
         width: 343px;
         height: 77px;
         justify-content: center;
@@ -39,7 +39,7 @@
     }
 
     .p_text_block {
-        margin-left: 52px;
+        margin-left: 10px;
         font-style: normal;
         font-weight: 300;
         font-size: 14px;
@@ -52,7 +52,8 @@
         color: #FFFFFF;
         max-width: 343px;
     }
-
+    .top_button{
+        margin-left: 16px;}
     .bottom_gamebox {
         margin-left: 16px;
         margin-right: 16px;
@@ -70,21 +71,110 @@
     .gblock {
         max-width: 340px;
         height: 300px;
-        margin-right: 52px;
+        
     }
-
+    .gblock_gamename {
+            transition: all 1s;
+        &:hover{
+            transform: scale(1.0);
+            text-decoration: none;}
+    }
     .gblock_img {
         width: 340px;
         height: 300px;
-    }
-
-    .bottom {
-        padding-left: 100px;
-        box-sizing: border-box;
-    }
-
-    .content {
-        padding-left: 16px;
         padding-right: 16px;
+        padding-right: 16px;
+        transition: all 1s;
+    &:hover{animation: buttonAnim 0s ease 0s 0 normal forwards;
+}
     }
+   
+    
+    .footerframe_year{
+        margin-top: 178px;
+        width: 343px;
+        height: 217px;
+        padding-right:16px ;
+        padding-left: 16px;
+        align-items: center;
+
+    }
+    .footerpicture_block{
+        margin-right: 37px;
+        margin-left: 37px;
+        margin-top: 64px;
+        width: 343px;
+        height: 653px;}
+    .footer{
+        padding-top: 320px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        flex-wrap: nowrap;
+        flex-direction: column;
+        height: 636px;
+        
+    }
+    .footerframe_year_button
+    {
+    width: 234px;
+    max-height: 45px;
+    background: #9C0332;
+    border-radius: 30px;}
+
+    .gblock_img {
+        border-radius: 16px;
+        width: 340px;
+        height: 300px;
+        padding-right: 0px;
+    }
+//   .footerframe_year_heder{
+//     font-family: 'Montserrat';
+//     font-style: normal;
+//     font-weight: 700;
+//     font-size: 32px;
+//     line-height: 39px;
+//     display: flex;
+//     align-items: center;
+//     text-align: center;
+//     color: #FFFFFF;
+//     width: 243px;
+//     height: 39px;
+//     padding-left: 66px;
+//     padding-right: 66px;
+
+//   } 
+  
+  .footerframe_year_heder_text{    
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 39px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #FFFFFF;
+   
+    height: 39px;
+    
+
+
+  }
+  .footerframe_year_content{
+    font-style: normal;
+font-weight: 300;
+font-size: 14px;
+line-height: 22px;
+/* or 157% */
+
+display: flex;
+align-items: center;
+text-align: center;
+
+color: #FFFFFF;
+  }
+  .button_futer{height: 100px;}
+
+  
 }

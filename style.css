@@ -1,3 +1,73 @@
+@keyframes buttonAnim {
+  0% {
+    animation-timing-function: ease-in;
+    opacity: 1;
+    transform: translateY(-45px);
+  }
+  24% {
+    opacity: 1;
+  }
+  40% {
+    animation-timing-function: ease-in;
+    transform: translateY(-24px);
+  }
+  65% {
+    animation-timing-function: ease-in;
+    transform: translateY(-12px);
+  }
+  82% {
+    animation-timing-function: ease-in;
+    transform: translateY(-6px);
+  }
+  93% {
+    animation-timing-function: ease-in;
+    transform: translateY(-4px);
+  }
+  25%, 55%, 75%, 87% {
+    animation-timing-function: ease-out;
+    transform: translateY(0px);
+  }
+  100% {
+    animation-timing-function: ease-out;
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+@keyframes pictureAnim {
+  0% {
+    animation-timing-function: ease-in;
+    opacity: 1;
+    transform: translateX(48px);
+  }
+  24% {
+    opacity: 1;
+  }
+  40% {
+    animation-timing-function: ease-in;
+    transform: translateX(26px);
+  }
+  65% {
+    animation-timing-function: ease-in;
+    transform: translateX(13px);
+  }
+  82% {
+    animation-timing-function: ease-in;
+    transform: translateX(6.5px);
+  }
+  93% {
+    animation-timing-function: ease-in;
+    transform: translateX(4px);
+  }
+  25%, 55%, 75%, 87%, 98% {
+    animation-timing-function: ease-out;
+    transform: translateX(0px);
+  }
+  100% {
+    animation-timing-function: ease-out;
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
 * {
   margin: 0;
   padding: 0;
@@ -12,18 +82,9 @@ a {
   padding-right: calc(50% - 720px);
 }
 
-.body {
-  font-family: "Montserrat";
-  font-style: normal;
-  background: #000915;
-  max-width: 1440px;
-  height: 1024px;
-}
-
 .top {
   max-width: 1440px;
-  max-height: 1024px;
-  margin-bottom: 450px;
+  height: 1024px;
   background-image: url(img/bckgrtp.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -34,20 +95,22 @@ a {
 }
 
 .h1_block {
+  padding-top: 217px;
   margin-left: 120px;
-  margin-top: 217px;
   font-style: normal;
   display: flex;
   align-items: center;
+  font-family: "Montserrat";
+  display: flex;
+  align-items: center;
   color: #FFFFFF;
-  width: 788px;
 }
 
 .p_text_block {
   width: 481px;
   height: 64px;
   margin-left: 120px;
-  margin-top: 17px;
+  margin-top: 32px;
   width: 481px;
   font-family: "Montserrat";
   font-style: normal;
@@ -69,17 +132,27 @@ a {
   top: 482px;
   background: #9C0332;
   border-radius: 30px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  color: #FFFFFF;
+  transition: all 1s;
+}
+.top_button:hover {
+  transform: scale(1.5);
+  box-shadow: 0 0 5px #f4f5f7;
 }
 
 .bottom {
-  padding-top: 128px;
   padding-bottom: 128px;
   background-image: url(img/bckgrbm.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   max-width: 1440px;
-  max-height: 556px;
+  height: 556px;
 }
 
 .bottom_gamebox {
@@ -88,12 +161,18 @@ a {
   flex-wrap: wrap;
   flex-direction: row;
   gap: 32px;
+  transition: all 1s;
+  animation: pictureAnim 2s ease 0s 1 normal forwards;
 }
 
 .gblock_img {
   border-radius: 16px;
   width: 379px;
   height: 300px;
+  transition: all 1s;
+}
+.gblock_img:hover {
+  animation: buttonAnim 2s ease 0s 1 normal forwards;
 }
 
 .gblock_gamename {
@@ -109,12 +188,95 @@ a {
   display: flex;
   align-items: center;
   color: #FFFFFF;
+  transition: all 1s;
+}
+.gblock_gamename:hover {
+  transform: scale(1.1);
+  text-decoration: underline;
+}
+
+.footerframe_year {
+  border: #FFFFFF;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  padding-left: 120px;
+  gap: 32px;
+  max-width: 584px;
+  max-height: 235px;
+}
+
+.footerframe_year_heder {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 59px;
+  display: flex;
+  align-items: center;
+  color: #ffffff;
+}
+
+.footerframe_year_content {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 32px;
+  display: flex;
+  align-items: center;
+  color: #FFFFFf;
+}
+
+.footerframe_year_button {
+  width: 234px;
+  height: 48px;
+  left: 0px;
+  top: 187px;
+  background: #9C0332;
+  border-radius: 30px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  color: #FFFFFF;
+  transition: all 1s;
+}
+.footerframe_year_button:hover {
+  transform: scale(1.5);
+  box-shadow: 0 0 5px #f4f5f7;
+}
+
+.footerpicture_block {
+  margin-right: 115px;
+  max-width: 485px;
+  height: 333px;
+  transition: all 1s;
+  animation: pictureAnim 2s ease 0s 1 normal forwards;
+}
+.footerpicture_block:hover {
+  box-shadow: 0px 0px 5px rgb(237, 228, 228);
+}
+
+.footer {
+  padding-bottom: 282px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  background-image: url(img/bckgrbm.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 @media (max-width: 767px) {
   * {
-    margin: 0;
-    padding: 0;
+    margin: 0px;
+    padding: 0px;
   }
   .center {
     padding-left: 16px;
@@ -122,8 +284,7 @@ a {
   }
   .top {
     max-width: 1440px;
-    max-height: 1024px;
-    margin-bottom: 190px;
+    max-height: 735px;
   }
   .top_button {
     margin-left: 52px;
@@ -136,14 +297,15 @@ a {
     align-items: center;
   }
   .h1_block {
-    margin-left: 52px;
+    margin-left: 16px;
+    margin-right: 16px;
     width: 343px;
     height: 77px;
     justify-content: center;
     text-align: center;
   }
   .p_text_block {
-    margin-left: 52px;
+    margin-left: 10px;
     font-style: normal;
     font-weight: 300;
     font-size: 14px;
@@ -154,6 +316,9 @@ a {
     text-align: center;
     color: #FFFFFF;
     max-width: 343px;
+  }
+  .top_button {
+    margin-left: 16px;
   }
   .bottom_gamebox {
     margin-left: 16px;
@@ -170,18 +335,84 @@ a {
   .gblock {
     max-width: 340px;
     height: 300px;
-    margin-right: 52px;
+  }
+  .gblock_gamename {
+    transition: all 1s;
+  }
+  .gblock_gamename:hover {
+    transform: scale(1);
+    text-decoration: none;
   }
   .gblock_img {
     width: 340px;
     height: 300px;
-  }
-  .bottom {
-    padding-left: 100px;
-    box-sizing: border-box;
-  }
-  .content {
-    padding-left: 16px;
     padding-right: 16px;
+    padding-right: 16px;
+    transition: all 1s;
+  }
+  .gblock_img:hover {
+    animation: buttonAnim 0s ease 0s 0 normal forwards;
+  }
+  .footerframe_year {
+    margin-top: 178px;
+    width: 343px;
+    height: 217px;
+    padding-right: 16px;
+    padding-left: 16px;
+    align-items: center;
+  }
+  .footerpicture_block {
+    margin-right: 37px;
+    margin-left: 37px;
+    margin-top: 64px;
+    width: 343px;
+    height: 653px;
+  }
+  .footer {
+    padding-top: 320px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    height: 636px;
+  }
+  .footerframe_year_button {
+    width: 234px;
+    max-height: 45px;
+    background: #9C0332;
+    border-radius: 30px;
+  }
+  .gblock_img {
+    border-radius: 16px;
+    width: 340px;
+    height: 300px;
+    padding-right: 0px;
+  }
+  .footerframe_year_heder_text {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 39px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #FFFFFF;
+    height: 39px;
+  }
+  .footerframe_year_content {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 22px;
+    /* or 157% */
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #FFFFFF;
+  }
+  .button_futer {
+    height: 100px;
   }
 }/*# sourceMappingURL=style.css.map */
