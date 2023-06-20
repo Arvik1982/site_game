@@ -52,12 +52,13 @@ let userFriday=+prompt(`введите первую пятниу месяца о
     
 } else {
     
-    let friday =userFriday;
-    for(dayMonth=1; friday<=31;dayMonth++,friday=friday+7){
+    // let friday =userFriday;
+    for(dayMonth=1; friday<=31;dayMonth++,friday+=7){
         
-        console.log(`Сегодня пятница ${friday}-e отчетный день!`);
-        }  
+        console.log(`Сегодня пятница ${friday}-e отчетный день!`);}  
 } 
+
+
 
 
 
