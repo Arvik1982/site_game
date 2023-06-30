@@ -6,22 +6,25 @@
     }
 
     .center {
+        margin-left: 0px;
+        margin-right: 0px;
         padding-left: 16px;
         padding-right: 16px;
     }
-
+    .leftalign{
+        padding-left: 0px;
+    }
     .top {
         max-width: 1440px;
-        max-height: 1024px;
-        margin-bottom: 190px;
+        max-height: 735px;
     }
 
     .top_button {
-        margin-left: 52px;
+        margin-left: 0px;
     }
 
 
-    // .top_button{margin-bottom: 366px;}
+    // .top_button{margin-games: 366px;}
     .top_text_block {
         display: flex;
         flex-direction: column;
@@ -31,7 +34,8 @@
     }
 
     .h1_block {
-        margin-left: 52px;
+        margin-left: 0px;
+        margin-right: 0px;
         width: 343px;
         height: 77px;
         justify-content: center;
@@ -39,13 +43,11 @@
     }
 
     .p_text_block {
-        margin-left: 52px;
+        margin-left: 0px;
         font-style: normal;
         font-weight: 300;
         font-size: 14px;
         line-height: 22px;
-        /* or 157% */
-
         display: flex;
         align-items: center;
         text-align: center;
@@ -53,9 +55,13 @@
         max-width: 343px;
     }
 
-    .bottom_gamebox {
-        margin-left: 16px;
-        margin-right: 16px;
+    // .top_button {
+    //     margin-left: 16px;
+    // }
+
+    .games_gamebox {
+        margin-left: 0px;
+        margin-right: 0px;
         display: flex;
         flex-wrap: nowrap;
         flex-direction: column;
@@ -70,21 +76,185 @@
     .gblock {
         max-width: 340px;
         height: 300px;
-        margin-right: 52px;
+
+    }
+
+    .gblock_gamename {
+        transition: all 1s;
+
+        &:hover {
+            transform: scale(1.0);
+            text-decoration: none;
+        }
     }
 
     .gblock_img {
         width: 340px;
         height: 300px;
+        // padding-right: 16px;
+        // padding-right: 16px;
+        transition: all 1s;
+
+        &:hover {
+            animation: buttonAnim 0s ease 0s 0 normal forwards;
+        }
     }
 
-    .bottom {
-        padding-left: 100px;
-        box-sizing: border-box;
+
+    .times_year {
+        margin-top: 178px;
+        width: 343px;
+        height: 217px;
+        // padding-right: 16px;
+        // padding-left: 16px;
+        align-items: center;
+
     }
 
-    .content {
-        padding-left: 16px;
-        padding-right: 16px;
+    .times_picture {
+        margin-right: 37px;
+        margin-left: 37px;
+        margin-top: 64px;
+        width: 343px;
+        // height: 653px;
     }
+
+    .times {
+        padding-top: 320px;
+        padding-bottom: 82px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        flex-wrap: nowrap;
+        flex-direction: column;
+        
+
+    }
+
+    .times_year_button {
+        width: 234px;
+        max-height: 45px;
+        background: #9C0332;
+        border-radius: 30px;
+    }
+
+    .gblock_img {
+        border-radius: 16px;
+        width: 340px;
+        height: 300px;
+        padding-right: 0px;
+    }
+
+    //   .timesframe_year_heder{
+    //     font-family: 'Montserrat';
+    //     font-style: normal;
+    //     font-weight: 700;
+    //     font-size: 32px;
+    //     line-height: 39px;
+    //     display: flex;
+    //     align-items: center;
+    //     text-align: center;
+    //     color: #FFFFFF;
+    //     width: 243px;
+    //     height: 39px;
+    //     padding-left: 66px;
+    //     padding-right: 66px;
+
+    //   } 
+
+    .times_year_heder_text {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 39px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        color: #FFFFFF;
+        height: 39px;
+
+
+
+    }
+    .times_content{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: nowrap;
 }
+    .times_year_content {
+        font-style: normal;
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 22px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        color: #FFFFFF;
+    }
+
+    .button_futer {
+        height: 100px;
+    }
+    .words_content{display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: nowrap;
+}
+    
+.words_remember{
+    margin-right: 0px;
+    border: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+    gap: 32px;
+    max-width: 584px;
+    max-height: 235px;
+    flex-wrap: nowrap;
+}
+.words_remember_heder{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 39px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #FFFFFF;}
+
+.words_remember_heder_text{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 39px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+     color: #FFFFFF;} 
+
+.words_remember_content{
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 22px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #FFFFFF;
+}             
+
+
+}
+
+
+
+
+
+
