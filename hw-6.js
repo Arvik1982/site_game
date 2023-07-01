@@ -32,6 +32,26 @@ for (let i = 0; i < 3; i++) {arr.push([1, 1, 1]);
 }
 console.log(arr);
 
+// Задание 4.2
+
+let arr=[];
+let i=0
+while (i<3) {
+    i++
+    {arr.push([1, 1, 1, 8]);
+    } 
+ 
+}
+console.log(arr); 
+
+//Задание4.3
+const arr=[];
+for (let index = 0; index < 3; index++) {
+    arr[index]=[];
+    for(let j=0; j<3; j++){
+    arr[i][j] = 1}
+}
+
 // Задание 5
 
 let arr=[1, 1, 1];
@@ -79,6 +99,11 @@ for (let i = 0; i < textArr.length; i++) {
   numArr.push(parseInt(textArr[i]))  
 }
 console.log (numArr)
+
+//9
+arr.flat
+newAnswer=[...arr[0], ...arr[1]]
+const arr=[].concat(...arr)
 
 // Задание 10
 
